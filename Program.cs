@@ -38,7 +38,17 @@ public class Converter
         {
             number -= 1000;
         }
-
+                
+        if (number >= 300)
+        {
+            number -= 300;
+        }
+        
+        if (number >= 200)
+        {
+            number -= 200;
+        }
+        
         if (number >= 100)
         {
             number -= 100;
