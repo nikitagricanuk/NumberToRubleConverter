@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         int kopeks = int.Parse(Console.ReadLine());
-        Console.WriteLine(Converter.GetResult(kopeks));
+        Console.WriteLine(Converter.Convert(kopeks));
     }
 }
 
@@ -55,7 +55,7 @@ public class Converter
         }
         return number;
     }
-    public static string GetResult(int number)
+    public static string Convert(int number)
     {
         int rubles = GetRubles(number);
         int kopeks = GetKopeks(number);
